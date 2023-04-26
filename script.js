@@ -32,7 +32,10 @@ bpmInput.addEventListener("input", function () {
       bgText.innerHTML = "... reggae?";
     } else if (bpmInput.value >= 40 && bpmInput.value <= 59) {
       bgText.innerHTML = "why?";
-    } else if (bpmInput.value >= 20 && bpmInput.value <= 39) {
+    } else if (
+      (bpmInput.value >= 20 && bpmInput.value <= 39) ||
+      bpmInput.value > 180
+    ) {
       bgText.innerHTML = "are you ok?";
     } else {
       bgText.innerHTML = "._.";
